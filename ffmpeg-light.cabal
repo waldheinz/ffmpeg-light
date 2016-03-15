@@ -1,5 +1,5 @@
 name:                ffmpeg-light
-version:             0.9.0
+version:             0.11.0
 synopsis:            Minimal bindings to the FFmpeg library.
 
 description:         Stream frames from an encoded video, or stream frames to
@@ -15,8 +15,7 @@ description:         Stream frames from an encoded video, or stream frames to
                      > go = do (getFrame, cleanup) <- imageReader "myVideo.mov"
                      >         (fmap ImageRGB8 <$> getFrame) <* cleanup
                      .
-                     Tested on OS X 10.11.2 with <http://www.ffmpeg.org FFmpeg> 2.8.3
-                     installed via <http://brew.sh homebrew>.
+                     Tested with FFmpeg 2.7 - 3.0
 
 license:             BSD3
 license-file:        LICENSE
@@ -27,7 +26,7 @@ homepage:            http://github.com/acowley/ffmpeg-light
 bug-reports:         http://github.com/acowley/ffmpeg-light/issues
 category:            Codec
 build-type:          Simple
-extra-source-files:  src/hscMacros.h, src/nameCompat.h, CHANGELOG.md
+extra-source-files:  src/hscMacros.h, CHANGELOG.md
 cabal-version:       >=1.10
 
 source-repository head
